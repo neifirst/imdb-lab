@@ -8,11 +8,11 @@ Casting.delete_all()
 Actor.delete_all()
 Movie.delete_all()
 
-movie1 = Movie.new({ 'title' => 'Dark City', 'genre' => 'SciFi', 'rating' => 10 })
+movie1 = Movie.new({ 'title' => 'Dark City', 'genre' => 'SciFi', 'rating' => 10, 'budget' => 8000000})
 movie1.save()
-movie2 = Movie.new({ 'title' => 'The Thing', 'genre' => 'Horror', 'rating' => 10 })
+movie2 = Movie.new({ 'title' => 'The Thing', 'genre' => 'Horror', 'rating' => 10, 'budget' => 3000000 })
 movie2.save()
-movie3 = Movie.new({ 'title' => 'Leon', 'genre' => 'Thriller', 'rating' => 10 })
+movie3 = Movie.new({ 'title' => 'Leon', 'genre' => 'Thriller', 'rating' => 10, 'budget' => 8000000 })
 movie3.save()
 
 
