@@ -60,6 +60,13 @@ class Casting
     SqlRunner.run(sql, values)
   end
 
+  def update_budget()
+    sql = "UPDATE movies
+          SET budget = (budget - $1)
+          WHERE id = $2"
+    values = [@fee, @movie_id]
+    SqlRunner.run( sql,values )
+  end
 
   def self.all()
     sql = "SELECT *
